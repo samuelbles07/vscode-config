@@ -58,6 +58,24 @@
 
     "vim.leader": "<Space>",
     "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["<C-h>"],
+        "commands": ["cursorLeft"]
+      },
+      {
+        "before": ["<C-l>"],
+        "commands": ["cursorRight"]
+      },
+      {
+        "before": ["<C-k>"],
+        "commands": ["cursorUp"]
+      },
+      {
+        "before": ["<C-j>"],
+        "commands": ["cursorDown"]
+      },
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
       // NAVIGATION
       // switch b/w buffers
@@ -86,7 +104,7 @@
         "commands": ["workbench.action.focusRightGroup"]
       },
       // NICE TO HAVE
-      { "before": ["leader", "w"], "commands": [":w!"] },
+      { "before": ["leader", "w"], "commands": ["workbench.action.files.save"] },
       { "before": ["leader", "q"], "commands": [":q!"] },
       { "before": ["leader", "x"], "commands": [":x!"] },
       {
