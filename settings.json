@@ -1,0 +1,123 @@
+{
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+    "editor.renderWhitespace": "none",
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "python.formatting.provider": "black",
+    "python.pythonPath": "/usr/bin/python",
+    "editor.minimap.enabled": false,
+    "python.defaultInterpreterPath": "/Users/inventory-1/.pyenv/shims/python",
+    "plantuml.server": "http://localhost:9999",
+    "plantuml.render": "PlantUMLServer",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "fileHeaderComment.parameter": {
+        "*": {
+            "company": "Bobobox",
+            "name": "Samuel Siburian"
+        }
+    },
+    "fileHeaderComment.template": {
+        "*": [
+            "${commentbegin}",
+            "${commentprefix} Created on ${date} - ${name}",
+            "${commentprefix}",
+            "${commentprefix} Copyright (c) ${year} ${company}",
+            "${commentprefix}",
+            "${commentprefix} Description: ",
+            "${commentend}"
+        ]
+    },
+    "mypy.runUsingActiveInterpreter": true,
+    "workbench.preferredDarkColorTheme": "One Dark Pro Flat",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.fontFamily": "Hack Nerd, Monaco, 'Courier New', monospace",
+    "workbench.colorTheme": "Soft Colors (No Italics)",
+    "editor.fontSize": 13,
+    "editor.lineNumbers": "relative",
+    "breadcrumbs.enabled": false,
+
+    "vim.leader": "<Space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+      // NAVIGATION
+      // switch b/w buffers
+      { "before": ["<S-h>"], "commands": [":bprevious"] },
+      { "before": ["<S-l>"], "commands": [":bnext"] },
+
+      // splits
+      { "before": ["leader", "v"], "commands": [":vsplit"] },
+      { "before": ["leader", "s"], "commands": [":split"] },
+
+      // panes
+      {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+      },
+      {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+      },
+      {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+      },
+      {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+      },
+      // NICE TO HAVE
+      { "before": ["leader", "w"], "commands": [":w!"] },
+      { "before": ["leader", "q"], "commands": [":q!"] },
+      { "before": ["leader", "x"], "commands": [":x!"] },
+      {
+        "before": ["[", "d"],
+        "commands": ["editor.action.marker.prev"]
+      },
+      {
+        "before": ["]", "d"],
+        "commands": ["editor.action.marker.next"]
+      },
+      {
+        "before": ["<leader>", "c", "a"],
+        "commands": ["editor.action.quickFix"]
+      },
+      { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+      { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+      {
+        "before": ["g", "h"],
+        "commands": ["editor.action.showDefinitionPreviewHover"]
+      },
+      { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }
+  ],
+  "workbench.activityBar.location": "hidden"
+}
