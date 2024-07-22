@@ -70,6 +70,17 @@
         "key": "d",
         "when": "filesExplorerFocus && !inputFocus"
     },
+    // Go through autocomplete suggestion
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+tab",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
 
     // EXTRA
     {
