@@ -57,7 +57,15 @@
     "breadcrumbs.enabled": false,
 
     "vim.leader": "<Space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
     "vim.insertModeKeyBindings": [
       {
         "before": ["<C-h>"],
@@ -125,7 +133,7 @@
         "before": ["g", "h"],
         "commands": ["editor.action.showDefinitionPreviewHover"]
       },
-      { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }
+      { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] },
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
@@ -137,5 +145,28 @@
     // toggle comment selection
     { "before": ["leader", "/"], "commands": ["editor.action.commentLine"] }
   ],
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "idf.espIdfPath": "/Users/inventory-1/tools/esp/esp-idf",
+  "idf.pythonBinPath": "/Users/inventory-1/.espressif/python_env/idf4.4_py3.10_env/bin/python",
+  "idf.toolsPath": "/Users/inventory-1/.espressif",
+  "idf.customExtraPaths": "/Users/inventory-1/.espressif/tools/xtensa-esp-elf-gdb/11.2_20220823/xtensa-esp-elf-gdb/bin:/Users/inventory-1/.espressif/tools/riscv32-esp-elf-gdb/11.2_20220823/riscv32-esp-elf-gdb/bin:/Users/inventory-1/.espressif/tools/xtensa-esp32-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32-elf/bin:/Users/inventory-1/.espressif/tools/xtensa-esp32s2-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32s2-elf/bin:/Users/inventory-1/.espressif/tools/xtensa-esp32s3-elf/esp-2021r2-patch5-8.4.0/xtensa-esp32s3-elf/bin:/Users/inventory-1/.espressif/tools/riscv32-esp-elf/esp-2021r2-patch5-8.4.0/riscv32-esp-elf/bin:/Users/inventory-1/.espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/Users/inventory-1/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/bin",
+  "idf.customExtraVars": {
+    "OPENOCD_SCRIPTS": "/Users/inventory-1/.espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/share/openocd/scripts"
+  },
+  "idf.gitPath": "git",
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.showOnboardingOnInit": false,
   "workbench.activityBar.location": "hidden"
 }
