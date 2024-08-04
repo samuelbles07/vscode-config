@@ -91,4 +91,14 @@
         "key": "ctrl+z",
         "command": "workbench.action.toggleZenMode"
     },
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
 ]
